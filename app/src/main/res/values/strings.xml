@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Aresto</string>
+    <string name="text_title_header">Hai Arkan,</string>
+    <string name="text_subtitle_header">Mau makan apa hari ini?</string>
 </resources>
