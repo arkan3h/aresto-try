@@ -5,6 +5,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.arkan.aresto.adapter.CategoryAdapter
+import com.arkan.aresto.adapter.ProductAdapter
 import com.arkan.aresto.databinding.ActivityMainBinding
 import com.arkan.aresto.model.Category
 import com.arkan.aresto.model.Product

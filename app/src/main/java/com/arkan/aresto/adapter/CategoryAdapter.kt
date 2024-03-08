@@ -1,4 +1,4 @@
-package com.arkan.aresto
+package com.arkan.aresto.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
