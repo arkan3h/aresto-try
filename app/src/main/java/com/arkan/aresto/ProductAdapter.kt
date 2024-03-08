@@ -5,8 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.arkan.aresto.databinding.ItemProductBinding
 import com.arkan.aresto.model.Product
-import java.text.DecimalFormat
-import java.text.NumberFormat
+import com.arkan.aresto.utils.toIndonesianFormat
 
 class ProductAdapter : RecyclerView.Adapter<ProductAdapter.ProductViewHolder>(){
     private val data = mutableListOf<Product>()
@@ -34,14 +33,10 @@ class ProductAdapter : RecyclerView.Adapter<ProductAdapter.ProductViewHolder>(){
 
     class ProductViewHolder(private val binding: ItemProductBinding) :
         RecyclerView.ViewHolder(binding.root){
-            private val formatPrice : NumberFormat = DecimalFormat("#,###")
         fun bind(item: Product) {
             binding.ivProductImage.setImageResource(item.image)
             binding.tvProductName.text = item.name
-            binding.tvProductPrice.text = buildString {
-                append("Rp. ")
-                append(formatPrice.format(item.price))
-            }
+            binding.tvProductPrice.text = item.price.toIndonesianFormat()
         }
     }
 }
