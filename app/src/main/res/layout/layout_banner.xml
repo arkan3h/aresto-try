@@ -19,27 +19,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv_banner_image"
-        android:layout_margin="16dp"
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_banner_image"
         android:layout_width="80dp"
         android:layout_height="80dp"
+        android:layout_margin="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_banner"
+        app:shapeAppearanceOverlay="@style/image_rounded_medium"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:cardCornerRadius="8dp">
-
-        <ImageView
-            android:id="@+id/iv_banner_image"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ic_banner"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
-
-    </androidx.cardview.widget.CardView>
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
     <TextView
         android:id="@+id/tv_banner_title"
@@ -52,8 +42,8 @@
         android:textStyle="bold"
         android:maxLines="2"
         android:ellipsize="end"
-        app:layout_constraintTop_toTopOf="@id/cv_banner_image"
-        app:layout_constraintStart_toEndOf="@id/cv_banner_image"
+        app:layout_constraintTop_toTopOf="@id/iv_banner_image"
+        app:layout_constraintStart_toEndOf="@id/iv_banner_image"
         app:layout_constraintBottom_toTopOf="@id/tv_banner_subtitle"
         app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -69,7 +59,7 @@
         android:ellipsize="end"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_banner_title"
-        app:layout_constraintBottom_toBottomOf="@id/cv_banner_image"
-        app:layout_constraintStart_toEndOf="@id/cv_banner_image"/>
+        app:layout_constraintBottom_toBottomOf="@id/iv_banner_image"
+        app:layout_constraintStart_toEndOf="@id/iv_banner_image"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

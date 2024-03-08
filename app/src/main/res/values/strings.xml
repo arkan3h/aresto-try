@@ -4,4 +4,5 @@
     <string name="text_subtitle_header">Mau makan apa hari ini?</string>
     <string name="text_banner_name">Diskon 20% </string>
     <string name="text_banner_desc">Pesan makanan lewat aplikasi dan dapatkan diskonmu</string>
+    <string name="text_title_list">List Menu Makanan</string>
 </resources>
