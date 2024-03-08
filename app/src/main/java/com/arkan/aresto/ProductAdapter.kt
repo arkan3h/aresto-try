@@ -34,7 +34,7 @@ class ProductAdapter : RecyclerView.Adapter<ProductAdapter.ProductViewHolder>(){
 
     class ProductViewHolder(private val binding: ItemProductBinding) :
         RecyclerView.ViewHolder(binding.root){
-            val formatPrice : NumberFormat = DecimalFormat("#,###")
+            private val formatPrice : NumberFormat = DecimalFormat("#,###")
         fun bind(item: Product) {
             binding.ivProductImage.setImageResource(item.image)
             binding.tvProductName.text = item.name
