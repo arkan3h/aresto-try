@@ -37,7 +37,7 @@
         android:id="@+id/iv_cart"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@drawable/ic_cart"
+        android:src="@drawable/ic_cart_empty"
         android:layout_gravity="center_vertical"
         app:layout_constraintTop_toTopOf="@id/tv_name_header"
         app:layout_constraintBottom_toBottomOf="@id/tv_greetings_header"
